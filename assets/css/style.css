@@ -1,0 +1,196 @@
+body {
+	padding: 0px;
+}
+
+div {
+	display: block;
+}
+
+.popover { max-width: 1200px; }
+.align-left { float: left; }
+.align-right { float: right; }
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-toggle {
+	margin: 0;
+	padding: 15px;
+	border-radius: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	width: 100%;
+}
+
+.navbar-toggle .icon-bar {
+	position: relative;
+	left: 95%;
+}
+
+.navbar  { 
+	border: none;
+	position: fixed; 
+	right: 10px; 
+	background: transparent; 
+	margin: 0px; 
+	padding: 0px; 
+	width: 120px;
+	top: 25%;
+	z-index: 99;
+	right: 2%;
+}
+
+.navbar .navbar-collapse { padding: 0px; border: 1px solid black; border-radius: 5px; }
+.navbar .nav { float: none; margin: 0px; }
+.navbar .nav > li { display: block; float: none; height: 60px;} 
+.navbar .nav > li a { display: block; height: 60px; padding-top: 20px; text-align: center; color: #ffffff;}
+
+.navbar .nav > li a:hover, 
+.navbar .nav > li a:focus { color: #ddd;}
+
+.whole-screen {
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+}
+
+.whole-screen:before { 
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.8;
+	background-image: url("../images/montage.png");
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+	background-color: black;
+}
+
+.profile {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	font-weight: 600;
+	padding: 20px 0px 40px 0px;
+}
+
+.profile:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: #e6e6e6;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+    background-position: 50% 0;
+	background-size: cover;
+}
+
+.profile .wave {
+	position: relative;
+	text-align: center;
+	font-size: 4em;
+	margin: 30px 0;
+
+}
+
+.profile .wave span {
+	animation: colorRotate 3s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+	from {
+		color: #111111;
+	}
+	10% {
+		color: #777777;
+	}
+	20% {
+		color: #111111;
+	}
+	to {
+		color: #111111;
+	}
+}
+
+.profile .hi {
+	font-size: 10em;
+}
+
+
+.aboutme {
+	display: block;
+	margin: auto;
+	border: none;
+	text-align: center;
+	width: 60%;
+}
+
+.bottom-footer {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.bottom-footer .glyphicon {
+	display: block;
+	width: 40px;
+	font-size: 40px;
+	margin: auto;
+	color: black;
+	animation: updown 2s linear infinite;
+}
+
+@keyframes updown {
+	from {top: 0px; opacity: 0.3;}
+	50% {top: 10px; opacity: 1;}
+	to {top: 0px; opacity: 0.3;}
+}
+
+
+
+
+.background-experiences { background-color: rgba(74,189,172,0.5); }
+
+.img-ex { margin: 10px 0px; }
+
+#item { width: 100%; position: relative;}
+.topic { font-size: 1.5em; position: relative; left: 0%; }
+.date { font-size: 0.5em; position: absolute; top: 10px; right: 10%; }
+
+.my-btn-toggle { color: #337ab7; cursor: pointer; margin-left: 10px; }
+.my-btn-toggle:hover { text-decoration: underline; }
+
+
+.background-abilities { height: 500px; background-color: #FC4A1A; }
+.background-interests { height: 500px; background-color: #F7B733; }
+.background-contact { height: 500px; background-color: #DFDCE3; }
+
+
+@media (max-width: 767px) {
+	.container { padding-top: 46px;}
+	.navbar  { top: 0px; left: 0px; width: 100%; }
+	.navbar .navbar-collapse { margin-top: 46px; border-radius: 0px; }
+	.navbar .nav > li { background-color: #454545; display: block; width: 100%; }
+	.navbar .nav > li a { display:block; width: 100%; }
+}
+
+
+
